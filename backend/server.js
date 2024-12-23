@@ -11,6 +11,7 @@ const compression = require('compression');
 const helmet=require('helmet');
 const crypto=require('crypto');
 const rendertron = require('rendertron-middleware');
+const path = require("path");
 
 connectDb();
 
@@ -20,7 +21,7 @@ const app = express();
 
 // Use Rendertron middleware for rendering JavaScript content for bots (crawler).
 app.use(rendertron.makeMiddleware({
-  proxyUrl: 'https://render-tron.appspot.com/render',
+  proxyUrl: 'http://localhost:3001/render',
   injectShadyDom: true,
   userAgentPattern: /Googlebot|Bingbot|Yahoo|Slurp|DuckDuckBot|Baiduspider/i
 }));
