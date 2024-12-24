@@ -23,7 +23,7 @@ const Home = () => {
       </Helmet>
       <h1 style={{ fontSize: '32px', color: '#343a40', marginBottom: '1rem' }}>Welcome to MyCompany</h1>
       <p style={{ fontSize: '18px', color: '#495057' }}>
-        Your trusted partner for mobile app development.
+        Your trusted partner for mobile app development and web development.
       </p>
     </div>
   );
